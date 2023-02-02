@@ -3,7 +3,7 @@
 #### Project Declaration
 > For self improvement purpose   
 > Based on open source documents and courses    
-> For educational and scentific use only
+> For educational and scientific use only
 
 
 #### Tech involved
