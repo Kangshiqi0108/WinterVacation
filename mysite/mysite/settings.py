@@ -87,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',  # 换成mysql或其他
         'NAME': 'exp_db',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '030108',
         'HOST': 'localhost',
         'PORT': 3306,
     }

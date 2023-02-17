@@ -7,6 +7,7 @@ export default{
       list:['hello','world',]
     }
   },
+  
   methods:{
     getList(){
       axios(
