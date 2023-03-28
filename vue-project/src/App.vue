@@ -182,13 +182,4 @@ export default{
   vertical-align: text-bottom;
 }
 
-#Nav{
-  width: 50%;
-  float: left;
-}
-
-#Contact{
-  width: 50%;
-  float: right;
-}
 </style>
