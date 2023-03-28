@@ -1,4 +1,4 @@
-<script>
+<script >
 import axios from 'axios'
 import {
   Memo,
@@ -6,9 +6,24 @@ import {
   School,
   Sunrise,
 } from '@element-plus/icons-vue'
+
 export default{
     data() {
         return {
+          superurl: [
+                {
+                    url: '',
+                    img: '../src/assets/p1.jpg',
+                },
+                {
+                    url: '',
+                    img: '../src/assets/9.jpg',
+                },
+                {
+                    url: '',
+                    img: '../src/assets/p2.jpg',
+                },
+            ]
         };
     },
     methods: {
@@ -25,12 +40,10 @@ export default{
         },
         handleClose: (key, keyPath) => {
             console.log(key, keyPath);
-        },
+        }
     },
-    components: { }
+    components: {}
 }
-
-
 </script>
 
 
@@ -112,12 +125,12 @@ export default{
   </el-row>
         </el-aside>
         <el-main>
-          <div>
-            <el-carousel :interval="4000" type="card" height="200px">
-    <el-carousel-item v-for="item in 6" :key="item">
-      <h3 text="2xl" justify="center">{{ item }}</h3>
-    </el-carousel-item>
-  </el-carousel>
+          <div class="carousel">
+            <el-carousel :interval="4000" type="card" height="300px">
+              <el-carousel-item v-for="(item,index) in superurl" :key="index">
+                            <img :src="item.img"/>
+              </el-carousel-item>
+              </el-carousel>
           </div>
         </el-main>
       </el-container>
