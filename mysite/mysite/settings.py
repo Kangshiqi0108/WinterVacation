@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # 换成mysql或其他
+        'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'exp_db',
         'USER': 'root',
         'PASSWORD': '030108',
