@@ -23,6 +23,11 @@ export default{
                     url: '',
                     img: '../src/assets/p2.jpg',
                 },
+                {
+                    url:'',
+                    img:'../src/assets/12.jpg',
+
+                }
             ]
         };
     },
@@ -126,7 +131,7 @@ export default{
         </el-aside>
         <el-main>
           <div class="carousel">
-            <el-carousel :interval="4000" type="card" height="300px">
+            <el-carousel :interval="4000" type="card" height="240px">
               <el-carousel-item v-for="(item,index) in superurl" :key="index">
                             <img :src="item.img"/>
               </el-carousel-item>
@@ -135,63 +140,55 @@ export default{
         </el-main>
       </el-container>
     </el-container>
+    <el-footer>
+      <el-divider content-position="left"></el-divider>
+      <div class="Nav">
+      <h4>Quick Navigation</h4>
+      <el-divider content-position="left">Shaan'xi Normal University School of Computer Science</el-divider>
+    <div>
+    <el-link href="https://element-plus.org" target="_blank">default</el-link>
+    <el-link href='' type="default">Overview</el-link>
+    <el-link href='' type="default">Students</el-link>
+    <el-link href='' type="default">Research Results</el-link>
+    <el-link href='' type="default">Related Resources</el-link>
+  </div>
+      </div>
+      <div class="Contact">
+        <h4>Contact</h4>
+        <h6>Address: No. 620, West Chang'an Street, Chang'an District, Xi'an, Shaanxi Province</h6>
+        <h6>Postcode: 710119 </h6>
+        <h6>Telephone:029-85310161 </h6>
+        <h6>Fax: 029-85310661</h6>
+      </div>
+      <div class QRcode>
+        <h3>Wechat</h3>
+        <img src="../img/WeChat.jpg" alt="Contact Us">
+
+      </div>
+    </el-footer>
   </div>
    
 </template>
 
 <style scoped>
-.demo-image__placeholder .block {
-  padding: 30px 0;
-  text-align: center;
-  border-right: solid 1px var(--el-border-color);
-  display: inline-block;
-  width: 49%;
-  box-sizing: border-box;
-  vertical-align: top;
-}
-.demo-image__placeholder .demonstration {
-  display: block;
-  color: var(--el-text-color-secondary);
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-.demo-image__placeholder .el-image {
-  padding: 0 5px;
-  max-width: 300px;
-  max-height: 200px;
-}
 
-.demo-image__placeholder.image-slot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: var(--el-fill-color-light);
-  color: var(--el-text-color-secondary);
-  font-size: 14px;
-}
-.demo-image__placeholder .dot {
-  animation: dot 2s infinite steps(3, start);
-  overflow: hidden;
-}
 .menutag{
   font-size: large;
 }
-.el-carousel__item h3 {
-  color: #475669;
-  opacity: 0.75;
-  line-height: 200px;
-  margin: 0;
-  text-align: center;
+.el-link {
+  margin-right: 8px;
+}
+.el-link .el-icon--right.el-icon {
+  vertical-align: text-bottom;
 }
 
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
+#Nav{
+  width: 50%;
+  float: left;
 }
 
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
+#Contact{
+  width: 50%;
+  float: right;
 }
-
 </style>
