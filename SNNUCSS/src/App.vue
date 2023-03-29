@@ -54,7 +54,9 @@ export default{
             <el-menu-item index="1-1">
               <router-link to="/src/components/Carousel.vue">Display</router-link>
             </el-menu-item>
-            <el-menu-item index="1-2">item two</el-menu-item>
+            <el-menu-item index="1-2">
+              <router-link to="/src/components/Intro.vue">Intro</router-link>
+            </el-menu-item>
             <el-menu-item index="1-3">item three</el-menu-item>
           </el-menu-item-group>
           
@@ -112,7 +114,6 @@ export default{
       <h4>Quick Navigation</h4>
       <el-divider content-position="left">Shaan'xi Normal University School of Computer Science</el-divider>
     <div>
-    <el-link href="https://element-plus.org" target="_blank">default</el-link>
     <el-link href='' type="default">Overview</el-link>
     <el-link href='' type="default">Students</el-link>
     <el-link href='' type="default">Research Results</el-link>

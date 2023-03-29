@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Carousel from '../components/Carousel.vue'
+import Intro from '../components/Intro.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -21,7 +22,12 @@ const router = createRouter({
       path:'/src/components/Carousel.vue',
       name:'Carousel',
       component: Carousel
-    }
+    },
+    {
+      path:'/src/components/Intro.vue',
+      name:'Intro',
+      component:Intro
+    },
   ]
 })
 
