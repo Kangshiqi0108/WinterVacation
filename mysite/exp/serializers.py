@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from models import relatedresources,researchresults,student
+from exp.models import relatedresources,researchresults,student
 
 class relrSeria(serializers.HyperlinkedModelSerializer):
     class meta:

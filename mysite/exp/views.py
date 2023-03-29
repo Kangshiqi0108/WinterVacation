@@ -2,8 +2,8 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from serializers import relrSeria
-from models import relatedresources
+from exp.serializers import relrSeria
+from exp.models import relatedresources
 
 class relrList(APIView):
     def get(self,request,format=None):
