@@ -20,7 +20,7 @@ class relrList(APIView):
 
 class relrDetail(APIView):
     
-    def get(self,pkey):
+    def get_object(self,pkey):
         try:
             return  relatedresources.objects.get(pk=pkey)
         except relatedresources.DoesNotExist:
