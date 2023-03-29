@@ -8,38 +8,8 @@ import {
 } from '@element-plus/icons-vue'
 
 export default{
-    data() {
-        return {
-          superurl: [
-                {
-                    url: '',
-                    img: '../src/assets/p1.jpg',
-                },
-                {
-                    url: '',
-                    img: '../src/assets/9.jpg',
-                },
-                {
-                    url: '',
-                    img: '../src/assets/p2.jpg',
-                },
-                {
-                    url:'',
-                    img:'../src/assets/12.jpg',
-
-                }
-            ]
-        };
-    },
+    
     methods: {
-        getList() {
-            axios({
-                method: "get",
-                url: "http://127.0.0.1:8000/exp/"
-            }).then(response => {
-                list = response.data[0]["name"];
-            });
-        },
         handleOpen: (key, keyPath) => {
             console.log(key, keyPath);
         },
@@ -56,7 +26,7 @@ export default{
 <div class="common-layout">
     <el-container>
       <el-header class="headertag">
-        <img src="../img/logo.png" />
+        <img src="/src/img/logo.png" />
       </el-header>
       <el-container>
         <el-aside >
@@ -81,7 +51,9 @@ export default{
             <span>Overview</span>
           </template>
           <el-menu-item-group title="Overview">
-            <el-menu-item index="1-1">item one</el-menu-item>
+            <el-menu-item index="1-1">
+              <router-link to="/src/components/Carousel.vue">Display</router-link>
+            </el-menu-item>
             <el-menu-item index="1-2">item two</el-menu-item>
             <el-menu-item index="1-3">item three</el-menu-item>
           </el-menu-item-group>
@@ -130,13 +102,7 @@ export default{
   </el-row>
         </el-aside>
         <el-main>
-          <div class="carousel">
-            <el-carousel :interval="4000" type="card" height="240px">
-              <el-carousel-item v-for="(item,index) in superurl" :key="index">
-                            <img :src="item.img"/>
-              </el-carousel-item>
-              </el-carousel>
-          </div>
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -162,7 +128,7 @@ export default{
       </div>
       <div class QRcode>
         <h3>Wechat</h3>
-        <img src="../img/WeChat.jpg" alt="Contact Us">
+        <img src="/src/img/WeChat.jpg" alt="Contact Us">
 
       </div>
     </el-footer>
@@ -181,5 +147,4 @@ export default{
 .el-link .el-icon--right.el-icon {
   vertical-align: text-bottom;
 }
-
 </style>
