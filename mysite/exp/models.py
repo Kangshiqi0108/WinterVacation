@@ -15,9 +15,10 @@ class researchresults(models.Model):
     author = models.CharField(max_length=30)
     publishdate = models.DateField()
     
-class relatedresources(models.Model):
+class relatedresources(models.CharField):
     name = models.CharField(max_length=30)
-    link = models.CharField(max_length=150)
+    link = models.CharField(max_length=150,primary_key=True)
+    
     
 
 
