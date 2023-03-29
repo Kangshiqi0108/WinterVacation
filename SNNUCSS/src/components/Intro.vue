@@ -40,5 +40,8 @@
   width: 100%;
   display: block;
 }
+el-text{
+    font-size:x-large
+}
 
 </style>

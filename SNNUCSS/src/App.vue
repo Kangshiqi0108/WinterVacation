@@ -57,7 +57,9 @@ export default{
             <el-menu-item index="1-2">
               <router-link to="/src/components/Intro.vue">Intro</router-link>
             </el-menu-item>
-            <el-menu-item index="1-3">item three</el-menu-item>
+            <el-menu-item index="1-3">
+              <router-link to="/src/components/Logos.vue">Logos</router-link>
+            </el-menu-item>
           </el-menu-item-group>
           
         </el-sub-menu>

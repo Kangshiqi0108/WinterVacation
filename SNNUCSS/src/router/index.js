@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Carousel from '../components/Carousel.vue'
 import Intro from '../components/Intro.vue'
+import Logos from '../components/Logos.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -28,6 +30,11 @@ const router = createRouter({
       name:'Intro',
       component:Intro
     },
+    {
+      path:'/src/components/Logos.vue',
+      name:'Logos',
+      component:Logos
+    }
   ]
 })
 
