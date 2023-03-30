@@ -3,9 +3,10 @@ from rest_framework import serializers
 from exp.models import relatedresources,researchresults,student
 
 class relrSeria(serializers.HyperlinkedModelSerializer):
-    class meta:
+    class Meta:
         model=relatedresources
-        field=['name','link']
+        fields=['name','link']
+
     def create(self, validated_data):
          return relatedresources.objects.create(validated_data)
     
@@ -15,11 +16,13 @@ class relrSeria(serializers.HyperlinkedModelSerializer):
         instance.save()
         return instance
 class resrSeria(serializers.Serializer):
-    class meta:
+    class Meta:
         model:researchresults
+        fields='__all__'
         
 class studentSeria(serializers.Serializer):
-    class meta:
+    class Meta:
         model:student
+        fields='__all__'
         
         
