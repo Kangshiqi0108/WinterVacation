@@ -7,7 +7,7 @@ export default {
       tableData: [],
     };
   },
-  method: {
+  methods: {
     refresh() {
       axios({
         method: "get",
