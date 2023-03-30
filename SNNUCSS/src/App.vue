@@ -93,9 +93,12 @@ export default{
             <span>Related Resources</span>
           </template>
           <el-menu-item-group title="Related Resources">
-            <el-menu-item index="1-1">item one</el-menu-item>
-            <el-menu-item index="1-2">item two</el-menu-item>
-            <el-menu-item index="1-3">item three</el-menu-item>
+            <el-menu-item index="1-1">
+              <router-link to="/src/components/ResourceList.vue">ResourceList</router-link>
+            </el-menu-item>
+            <el-menu-item index="1-2">
+              <router-link to="/src/components/ResourceEdit.vue">Edit</router-link>
+            </el-menu-item>
           </el-menu-item-group>
           
         </el-sub-menu>
