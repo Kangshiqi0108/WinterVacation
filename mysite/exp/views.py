@@ -43,6 +43,32 @@ class studentList(APIView):
         studentlist = student.objects.all()
         serializer = studentSeria(studentlist,many=True)
         return Response(serializer.data)
+
+    def post(self,request,format=None):
+        newstu = studentSeria(data=request.data)
+        if newstu.is_valid():
+            newstu.save()
+            return Response(newstu.data, status=status.HTTP_201_CREATED)
+        return Response(newstu.errors, status=status.HTTP_400_BAD_REQUEST)
+class stuDetail(APIView):
     
+    def get_object(self,pkey):
+        try:
+            return  student.objects.get(pk=pkey)
+        except relatedresources.DoesNotExist:
+            return Http404
+    
+    def get(self, request, pk, format=None):
+        det = self.get_object(pk)
+        serializer = studentSeria(det)
+        return Response(serializer.data)
+
+    def put(self, request, pk):
+        det = self.get_object(pk)
+        serializer = studentSeria(det, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
             
