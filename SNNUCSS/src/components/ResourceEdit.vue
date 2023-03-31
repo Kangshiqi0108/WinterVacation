@@ -14,7 +14,7 @@ export default {
     onsubmit() {
       axios({
         method: "post",
-        url: "http://127.0.0.1:8000/exp/relrDetail/",
+        url: "http://127.0.0.1:8000/exp/relr/",
         name: this.$data.name,
         link: this.$data.link,
       });

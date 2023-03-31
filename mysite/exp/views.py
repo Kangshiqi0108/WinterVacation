@@ -2,8 +2,8 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from exp.serializers import relrSeria
-from exp.models import relatedresources
+from exp.serializers import relrSeria,studentSeria,resrSeria
+from exp.models import relatedresources,student,researchresults
 
 class relrList(APIView):
     def get(self,request,format=None):
@@ -38,5 +38,11 @@ class relrDetail(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+class studentList(APIView):
+    def get(self,request,format=None):
+        studentlist = student.objects.all()
+        serializer = studentSeria(studentlist,many=True)
+        return Response(serializer.data)
+    
+        
             

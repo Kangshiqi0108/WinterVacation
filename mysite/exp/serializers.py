@@ -25,5 +25,16 @@ class studentSeria(serializers.Serializer):
     class Meta:
         model:student
         fields='__all__'
+    def create(self, validated_data):
+         return student.objects.create(validated_data)
+    
+    def update(self, instance, validated_data):
+        instance.ID = validated_data.get('ID', instance.ID)
+        instance.first_name = validated_data.get('first_name', instance.first_name)
+        instance.second_name = validated_data.get('second_name', instance.second_name)
+        instance.gender = validated_data.get('gender', instance.gender)
+        instance.major = validated_data.get('major', instance.major)
+        instance.save()
+        return instance
         
         

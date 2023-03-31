@@ -5,7 +5,6 @@ class student(models.Model):
     first_name = models.CharField(max_length=30)
     second_name = models.CharField(max_length=30)
     gender = models.CharField(max_length=5)
-    admissiondate = models.DateField()
     major = models.CharField(max_length=30)
 
 
