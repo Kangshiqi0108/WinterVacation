@@ -7,12 +7,17 @@
 <script>
 import axios from "axios";
 export default {
-  data() {
-    return {
-      tableData:axios({
+  mounted() {
+    axios({
         method: "get",
         url: "http://127.0.0.1:8000/exp/relr/",
-      }).data
+      }).then(res => {
+        this.tableData = res.data;
+      })
+  },
+  data() {
+    return {
+      tableData: [],
       /*{ name: 'SNNU_MAIN_SITE',
     link: 'https://www.snnu.edu.cn/',
   },

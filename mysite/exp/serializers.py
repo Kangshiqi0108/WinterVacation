@@ -15,6 +15,7 @@ class relrSeria(serializers.HyperlinkedModelSerializer):
         instance.link = validated_data.get('link', instance.link)
         instance.save()
         return instance
+        
 class resrSeria(serializers.Serializer):
     class Meta:
         model:researchresults
