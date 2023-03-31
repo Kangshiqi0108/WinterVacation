@@ -1,7 +1,11 @@
 <template>
   <el-table :data="tableData" style="width: 100%">
-    <el-table-column prop="name" label="NAME" width="180" />
-    <el-table-column prop="link" label="LINK" />
+    <el-table-column prop="id" label="ID" width="180" />
+    <el-table-column prop="first_name" label="FIRST_NAME" />
+    <el-table-column prop="second_name" label="SECOND_NAME" />
+    <el-table-column prop="gender" label="GENDER" />
+    <el-table-column prop="major" label="MAJOR" />
+
   </el-table>
 </template>
 <script>

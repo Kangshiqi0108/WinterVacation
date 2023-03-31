@@ -65,7 +65,11 @@ export default {
                     <span>Students</span>
                   </template>
                   <el-menu-item-group title="Students">
-                    <el-menu-item index="1-1">item one</el-menu-item>
+                    <el-menu-item index="1-1">
+                      <router-link to="/src/components/StudentList.vue">
+                        StudentList
+                      </router-link>
+                    </el-menu-item>
                     <el-menu-item index="1-2">item two</el-menu-item>
                     <el-menu-item index="1-3">item three</el-menu-item>
                   </el-menu-item-group>

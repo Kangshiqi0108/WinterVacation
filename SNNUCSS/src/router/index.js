@@ -5,7 +5,7 @@ import Intro from "../components/Intro.vue";
 import Logos from "../components/Logos.vue";
 import ResourceList from "../components/ResourceList.vue";
 import ResourceEdit from "../components/ResourceEdit.vue";
-
+import StudentList from "../components/StudentList.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -47,6 +47,11 @@ const router = createRouter({
       path:"/src/components/ResourceEdit.vue",
       name:"ResourceEdit",
       component:ResourceEdit,
+    },
+    {
+      path:"/src/components/StudentList.vue",
+      name:"StudentList",
+      component:StudentList,
     },
     
   ],
