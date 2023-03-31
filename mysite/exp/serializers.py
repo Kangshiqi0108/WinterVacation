@@ -24,7 +24,7 @@ class resrSeria(serializers.Serializer):
 class studentSeria(serializers.Serializer):
     class Meta:
         model:student
-        fields='__all__'
+        fields=['ID','first_name','second_name','gender','major']
     def create(self, validated_data):
          return student.objects.create(validated_data)
     

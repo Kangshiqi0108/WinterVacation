@@ -9,11 +9,11 @@ import axios from "axios";
 export default {
   mounted() {
     axios({
-        method: "get",
-        url: "http://127.0.0.1:8000/exp/relr/",
-      }).then(res => {
-        this.tableData = res.data;
-      })
+      method: "get",
+      url: "http://127.0.0.1:8000/exp/relr/",
+    }).then((res) => {
+      this.tableData = res.data;
+    });
   },
   data() {
     return {

@@ -1,7 +1,8 @@
 from django.db import models
 
+
 class student(models.Model):
-    ID = models.CharField(max_length=30,primary_key=True)
+    ID = models.CharField(max_length=30, primary_key=True)
     first_name = models.CharField(max_length=30)
     second_name = models.CharField(max_length=30)
     gender = models.CharField(max_length=5)
@@ -9,17 +10,12 @@ class student(models.Model):
 
 
 class researchresults(models.Model):
-    ID = models.CharField(max_length=30,primary_key=True)
+    ID = models.CharField(max_length=30, primary_key=True)
     title = models.CharField(max_length=30)
     author = models.CharField(max_length=30)
     publishdate = models.DateField()
-    
+
+
 class relatedresources(models.Model):
     name = models.CharField(max_length=30)
-    link = models.CharField(max_length=150,primary_key=True)
-    
-    
-
-
-
-    
+    link = models.CharField(max_length=150, primary_key=True)
