@@ -79,7 +79,9 @@ export default {
                   </template>
                   <el-menu-item-group title="Research Results">
                     <el-menu-item index="1-1">
-                      <router-link to="/src/components/ResearchResultsList.vue">ResearchResultList</router-link>
+                      <router-link to="/src/components/ResearchResultsList.vue"
+                        >ResearchResultList</router-link
+                      >
                     </el-menu-item>
                   </el-menu-item-group>
                 </el-sub-menu>
@@ -119,10 +121,20 @@ export default {
           >Shaan'xi Normal University School of Computer Science</el-divider
         >
         <div>
-          <el-link href="https://bb.snnu.edu.cn" type="default">BlackBoard</el-link>
-          <el-link href="https://cet.neea.edu.cn/" type="default">CETtest</el-link>
-          <el-link href="https://ccs.snnu.edu.cn/" type="default">SNNU CSS</el-link>
-          <el-link href="https://v1.chaoxing.com/backSchool/toLogin" type="default">XUEXITONG</el-link>
+          <el-link href="https://bb.snnu.edu.cn" type="default"
+            >BlackBoard</el-link
+          >
+          <el-link href="https://cet.neea.edu.cn/" type="default"
+            >CETtest</el-link
+          >
+          <el-link href="https://ccs.snnu.edu.cn/" type="default"
+            >SNNU CSS</el-link
+          >
+          <el-link
+            href="https://v1.chaoxing.com/backSchool/toLogin"
+            type="default"
+            >XUEXITONG</el-link
+          >
         </div>
       </div>
       <div class="Contact">
