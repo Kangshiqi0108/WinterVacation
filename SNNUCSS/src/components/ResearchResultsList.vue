@@ -1,6 +1,6 @@
 <template>
     <el-table :data="tableData" style="width: 100%">
-      <el-table-column prop="id" label="ID" width="180" />
+      <el-table-column prop="id" label="ID" width="200" />
       <el-table-column prop="title" label="TITLE" />
       <el-table-column prop="author" label="AUTHOR" />
     </el-table>
@@ -11,7 +11,7 @@
     mounted() {
       axios({
         method: "get",
-        url: "http://127.0.0.1:8000/exp/resr/",
+        url: "http://127.0.0.1:8000/exp/resrl/",
       }).then((res) => {
         this.tableData = res.data;
       });

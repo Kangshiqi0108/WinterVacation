@@ -23,6 +23,7 @@ export default {
 };
 </script>
 <template>
+  <!---
   <el-form :model="form" label-width="120px">
     <el-form-item label="NAME">
       <el-input v-model="form.name" />
@@ -33,5 +34,6 @@ export default {
     <el-form-item>
       <el-button type="primary" @click="onsubmit">Create</el-button>
     </el-form-item>
-  </el-form>
+  </el-form> --->
+  <p>Coming Soon</p>
 </template>

@@ -80,8 +80,8 @@ class stuDetail(APIView):
 
 class resrList(APIView):
     def get(self, request, format=None):
-        resrlist = student.objects.all()
-        serializer = studentSeria(resrlist, many=True)
+        resrlist = researchresults.objects.all()
+        serializer = resrSeria(resrlist, many=True)
         return Response(serializer.data)
 
     def post(self, request, format=None):

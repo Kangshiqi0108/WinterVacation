@@ -119,10 +119,10 @@ export default {
           >Shaan'xi Normal University School of Computer Science</el-divider
         >
         <div>
-          <el-link href="" type="default">Overview</el-link>
-          <el-link href="" type="default">Students</el-link>
-          <el-link href="" type="default">Research Results</el-link>
-          <el-link href="" type="default">Related Resources</el-link>
+          <el-link href="https://bb.snnu.edu.cn" type="default">BlackBoard</el-link>
+          <el-link href="https://cet.neea.edu.cn/" type="default">CETtest</el-link>
+          <el-link href="https://ccs.snnu.edu.cn/" type="default">SNNU CSS</el-link>
+          <el-link href="https://v1.chaoxing.com/backSchool/toLogin" type="default">XUEXITONG</el-link>
         </div>
       </div>
       <div class="Contact">
