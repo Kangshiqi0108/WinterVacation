@@ -9,7 +9,7 @@ export default {
         },
         {
           url: "",
-          img: "/src/img/9.jpg",
+          img: "/src/img/92.jpg",
         },
         {
           url: "",

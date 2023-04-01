@@ -6,6 +6,8 @@ import Logos from "../components/Logos.vue";
 import ResourceList from "../components/ResourceList.vue";
 import ResourceEdit from "../components/ResourceEdit.vue";
 import StudentList from "../components/StudentList.vue";
+import ResearchResultsList from "../components/ResearchResultsList.vue";
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,6 +55,12 @@ const router = createRouter({
       name:"StudentList",
       component:StudentList,
     },
+    {
+      path:"/src/components/ResearchResultsList.vue",
+      name:"ResearchResultsList",
+      component:ResearchResultsList,
+    },
+
     
   ],
 });

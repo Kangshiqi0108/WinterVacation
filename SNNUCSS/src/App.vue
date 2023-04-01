@@ -70,8 +70,6 @@ export default {
                         StudentList
                       </router-link>
                     </el-menu-item>
-                    <el-menu-item index="1-2">item two</el-menu-item>
-                    <el-menu-item index="1-3">item three</el-menu-item>
                   </el-menu-item-group>
                 </el-sub-menu>
                 <el-sub-menu index="3">
@@ -80,9 +78,9 @@ export default {
                     <span>Research Results</span>
                   </template>
                   <el-menu-item-group title="Research Results">
-                    <el-menu-item index="1-1">item one</el-menu-item>
-                    <el-menu-item index="1-2">item two</el-menu-item>
-                    <el-menu-item index="1-3">item three</el-menu-item>
+                    <el-menu-item index="1-1">
+                      <router-link to="/src/components/ResearchResultsList.vue">ResearchResultList</router-link>
+                    </el-menu-item>
                   </el-menu-item-group>
                 </el-sub-menu>
                 <el-sub-menu index="4">
@@ -108,7 +106,7 @@ export default {
             <el-col> </el-col>
           </el-row>
         </el-aside>
-        <el-main>
+        <el-main width="400px">
           <router-view></router-view>
         </el-main>
       </el-container>
